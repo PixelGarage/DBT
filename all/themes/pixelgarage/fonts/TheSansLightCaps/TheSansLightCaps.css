@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TheSansLightCaps';
+    src: url('fonts/TheSansLightCaps.eot');
+    src: url('fonts/TheSansLightCaps.eot') format('embedded-opentype'),
+         url('fonts/TheSansLightCaps.woff2') format('woff2'),
+         url('fonts/TheSansLightCaps.woff') format('woff'),
+         url('fonts/TheSansLightCaps.ttf') format('truetype'),
+         url('fonts/TheSansLightCaps.svg#TheSansLightCaps') format('svg');
+}

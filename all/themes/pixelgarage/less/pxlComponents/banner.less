@@ -1,0 +1,78 @@
+/*
+ *  Banner component
+ * --------------------------------------------------*/
+
+
+// General settings/**/
+// -------------------------
+
+.view-banners {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: -5px;
+  font-family: @pxl-text-font;
+  font-size: 1.425em;
+  color: #f2f2f2;
+
+  .view-content {
+    margin: 0 -9999px;
+    padding: 0 9999px;
+    background-color: @brand-primary;
+    box-shadow: 0 20px 13px -15px @gray;
+    -moz-box-shadow: 0 15px 10px -12px @gray;
+    -webkit-box-shadow: 0 15px 10px -12px @gray;
+  }
+
+  @media @tablet {
+    font-size: 1.8em;
+  }
+
+  @media @normal {
+    font-size: 2.625em;
+    margin-top: 0;
+  }
+
+  .node-banner {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 80%;
+    height: 200px;
+
+    @media @tablet {
+      position: relative;
+      top: 50px;
+      left: 40px;
+      height: 200px;
+    }
+
+    @media @normal {
+      position: relative;
+      top: 50px;
+      left: 70px;
+      width: 80%;
+      height: 280px;
+    }
+  }
+
+
+  .carousel {
+    .carousel-control {
+      background: none;
+
+      .icon-prev {
+        background: none;
+      }
+      .icon-next {
+        background: transparent url(../images/arrow-right.png) top left / contain no-repeat;
+      }
+      .icon-prev::before,
+      .icon-next::before {
+        content: '';
+      }
+    }
+  }
+}
+

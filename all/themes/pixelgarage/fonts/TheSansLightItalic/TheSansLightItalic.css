@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TheSansLightItalic';
+    src: url('fonts/TheSansLightItalic.eot');
+    src: url('fonts/TheSansLightItalic.eot') format('embedded-opentype'),
+         url('fonts/TheSansLightItalic.woff2') format('woff2'),
+         url('fonts/TheSansLightItalic.woff') format('woff'),
+         url('fonts/TheSansLightItalic.ttf') format('truetype'),
+         url('fonts/TheSansLightItalic.svg#TheSansLightItalic') format('svg');
+}

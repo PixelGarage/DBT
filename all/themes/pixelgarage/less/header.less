@@ -1,0 +1,104 @@
+/* --------------------------------------------------
+ * Pixelgarage Header
+ * --------------------------------------------------*/
+
+// Main settings
+body.navbar-is-fixed-top {
+  padding-top: 110px !important;
+
+  &.admin-menu {
+    padding-top: 110px !important;
+  }
+}
+
+// correct navbar toggle
+.navbar-toggle {
+  padding: 5px 10px;
+  margin-right: 50px;
+}
+
+#navbar {
+  background-color: #fff;
+  border-bottom: none;
+
+  .nav-background {
+    overflow: hidden;
+    background-color: @brand-primary;
+
+    .navbar-header {
+      margin-left: 15px;
+
+      @media @tablet {
+        margin-left: 40px;
+      }
+
+      @media @normal {
+        margin-left: 70px;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    margin-top: 10px;
+
+    @media @tablet {
+      float: right;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+
+    @media @normal {
+      margin-top: 30px;
+      margin-right: 40px;
+    }
+
+    .navbar-nav li {
+      margin-right: 20px;
+
+      @media @tablet {
+        margin-right: 10px;
+      }
+
+      @media @normal {
+        margin-right: 20px;
+      }
+
+      a {
+        font-family: @pxl-text-font;
+        font-size: 14px;
+        text-align: center;
+        color: @brand-primary-darker;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        background: none;
+
+        @media @tablet {
+          font-size: 13px;
+          letter-spacing: 1.5px;
+        }
+
+        @media @normal {
+          font-size: 18px;
+          letter-spacing: 2px;
+        }
+
+        &:hover, &:active, &.active {
+          color: #fff;
+        }
+      }
+    }
+
+    .nav.secondary {
+      float: none;
+
+      @media @tablet {
+        float: right;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+

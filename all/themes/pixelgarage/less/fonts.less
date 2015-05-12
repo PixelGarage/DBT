@@ -1,0 +1,89 @@
+/* --------------------------------------------------
+ * Pixelgarage fonts
+ * --------------------------------------------------*/
+
+// Define customer specific fonts
+@pxl-font-path: '../fonts';
+@pxl-bs-path: '../bootstrap';
+
+// icon font
+@pxl-icon-font: 'SSSteedicons';
+
+// title font
+@pxl-title-font: 'TheSansLightCaps';
+
+// text fonts
+@pxl-text-font: 'TheSansLightPlain';
+@pxl-text-font-bold: 'TheSansPlain';
+@pxl-text-font-italics: 'TheSansLightItalic';
+@font-family-base: @pxl-text-font;
+
+//overides
+@font-family-base: @pxl-text-font;
+@font-family-regular: @pxl-text-font;
+@font-family-bold: @pxl-text-font-bold;
+@font-family-italic: @pxl-text-font-italics;
+@font-family-sans-serif: @pxl-text-font;
+
+// form font
+@pxl-form-font: 'TheSansLightPlain';
+
+// Awesome icon font
+@import '../fonts/font-awesome/less/font-awesome';
+@fa-font-path: '@{pxl-font-path}/font-awesome/fonts'; // override fa font path (lazy loading)
+
+// title font
+@font-face {
+  font-family: 'TheSansLightCaps';
+  src: url('@{pxl-font-path}/TheSansLightCaps/TheSansLightCaps.eot');
+  src: url('@{pxl-font-path}/TheSansLightCaps/TheSansLightCaps.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/TheSansLightCaps/TheSansLightCaps.woff2') format('woff2'),
+  url('@{pxl-font-path}/TheSansLightCaps/TheSansLightCaps.woff') format('woff'),
+  url('@{pxl-font-path}/TheSansLightCaps/TheSansLightCaps.ttf') format('truetype'),
+  url('@{pxl-font-path}/TheSansLightCaps/TheSansLightCaps.svg#TheSansLightCaps') format('svg');
+}
+
+// text fonts
+@font-face {
+  font-family: 'TheSansLightPlain';
+  src: url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.eot');
+  src: url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.woff2') format('woff2'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.woff') format('woff'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.ttf') format('truetype'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.svg#TheSansLightPlain') format('svg');
+}
+
+// text font italic
+@font-face {
+  font-family: 'TheSansLightItalic';
+  src: url('@{pxl-font-path}/TheSansLightItalic/TheSansLightItalic.eot');
+  src: url('@{pxl-font-path}/TheSansLightItalic/TheSansLightItalic.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/TheSansLightItalic/TheSansLightItalic.woff2') format('woff2'),
+  url('@{pxl-font-path}/TheSansLightItalic/TheSansLightItalic.woff') format('woff'),
+  url('@{pxl-font-path}/TheSansLightItalic/TheSansLightItalic.ttf') format('truetype'),
+  url('@{pxl-font-path}/TheSansLightItalic/TheSansLightItalic.svg#TheSansLightItalic') format('svg');
+}
+
+// text font bold
+@font-face {
+  font-family: 'TheSansPlain';
+  src: url('@{pxl-font-path}/TheSansPlain/TheSansPlain.eot');
+  src: url('@{pxl-font-path}/TheSansPlain/TheSansPlain.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/TheSansPlain/TheSansPlain.woff2') format('woff2'),
+  url('@{pxl-font-path}/TheSansPlain/TheSansPlain.woff') format('woff'),
+  url('@{pxl-font-path}/TheSansPlain/TheSansPlain.ttf') format('truetype'),
+  url('@{pxl-font-path}/TheSansPlain/TheSansPlain.svg#TheSansPlain') format('svg');
+}
+
+
+// form font
+@font-face {
+  font-family: 'TheSansLightPlain';
+  src: url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.eot');
+  src: url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.woff2') format('woff2'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.woff') format('woff'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.ttf') format('truetype'),
+  url('@{pxl-font-path}/TheSansLightPlain/TheSansLightPlain.svg#TheSansLightPlain') format('svg');
+}

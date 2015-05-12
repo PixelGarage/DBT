@@ -1,0 +1,51 @@
+/* --------------------------------------------------
+ * Pixelgarage Footer
+ * --------------------------------------------------*/
+
+.footer {
+  border-top: none;
+  padding-bottom: 0;
+
+  .footer-inner {
+    overflow: hidden;
+    height: 650px;
+    background: transparent url(../images/footer-dbt.png) no-repeat bottom left;
+    background-size: contain;
+
+    .region-footer {
+      position: relative;
+      height: 100%;
+      line-height: 650px;
+
+      .block-block {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 25%;
+        height: 65px;
+        margin: 0 -2px 30px;
+        border-right: solid 2px;
+        border-color: #fff;
+
+        p {
+          font-size: 11px;
+          line-height: 1.5;
+          text-align: center;
+          vertical-align: middle;
+          color: #fff;
+
+          @media @tablet {
+            font-size: @font-size-large;
+          }
+
+          a {
+            color: #fff;
+          }
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
