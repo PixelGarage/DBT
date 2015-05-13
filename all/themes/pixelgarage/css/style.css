@@ -8873,6 +8873,37 @@ form#user-login {
   content: "\f650";
 }
 /*
+ * Home / Landing styles
+ * --------------------------------------------------*/
+#block-system-main .pane-title {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'TheSansLightCaps';
+}
+#block-system-main .node-node-block {
+  padding-bottom: 50px;
+  box-shadow: 0 20px 13px -15px #555555;
+  -moz-box-shadow: 0 15px 10px -12px #555555;
+  -webkit-box-shadow: 0 15px 10px -12px #555555;
+}
+#block-system-main .node-node-block .field-name-body {
+  margin: 50px;
+  text-align: center;
+  font-family: 'TheSansLightPlain';
+}
+#block-system-main .view-referenzen .view-mode-teaser {
+  position: relative;
+  margin: 0 30px;
+}
+#block-system-main .view-referenzen .view-mode-teaser .field-name-title {
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  #block-system-main .view-referenzen .view-mode-teaser .field-name-title {
+    padding-top: 0;
+  }
+}
+/*
  *  Banner component
  * --------------------------------------------------*/
 .view-banners {
@@ -8884,10 +8915,6 @@ form#user-login {
   font-family: 'TheSansLightPlain';
   font-size: 1.425em;
   color: #f2f2f2;
-}
-.view-banners .view-content {
-  margin: 0 -9999px;
-  padding: 0 9999px;
   background-color: #8f9fa6;
   box-shadow: 0 20px 13px -15px #555555;
   -moz-box-shadow: 0 15px 10px -12px #555555;
@@ -8906,15 +8933,15 @@ form#user-login {
 }
 .view-banners .node-banner {
   position: relative;
-  top: 30px;
+  top: 20px;
   left: 30px;
   width: 80%;
-  height: 200px;
+  height: 150px;
 }
 @media screen and (min-width: 768px) {
   .view-banners .node-banner {
     position: relative;
-    top: 50px;
+    top: 30px;
     left: 40px;
     height: 200px;
   }
@@ -8922,7 +8949,7 @@ form#user-login {
 @media screen and (min-width: 992px) {
   .view-banners .node-banner {
     position: relative;
-    top: 50px;
+    top: 40px;
     left: 70px;
     width: 80%;
     height: 280px;
@@ -8936,6 +8963,7 @@ form#user-login {
 }
 .view-banners .carousel .carousel-control .icon-next {
   background: transparent url(../images/arrow-right.png) top left / contain no-repeat;
+  height: 100%;
 }
 .view-banners .carousel .carousel-control .icon-prev::before,
 .view-banners .carousel .carousel-control .icon-next::before {
@@ -8976,7 +9004,7 @@ form#user-login {
   -webkit-box-shadow: 0 15px 10px -12px #555555;
 }
 .view-modell .node-modell h2 {
-  text-align: center;
+  text-align: left;
   font-family: 'TheSansLightCaps';
 }
 .view-modell .node-modell .field-name-title {
@@ -9108,6 +9136,7 @@ form#user-login {
   padding-bottom: 30px;
 }
 .view-referenzen .views-row {
+  margin: 0 30px;
   padding-bottom: 20px;
   padding-top: 50px;
   border-bottom: 2px solid rgba(162, 163, 163, 0.1);
@@ -9139,6 +9168,7 @@ body.navbar-is-fixed-top.admin-menu {
   padding-top: 110px !important;
 }
 .navbar-toggle {
+  background-color: #fff;
   padding: 5px 10px;
   margin-right: 50px;
 }
