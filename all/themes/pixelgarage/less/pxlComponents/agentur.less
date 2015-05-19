@@ -21,6 +21,8 @@
   }
 }
 
+// Core team & advisory
+
 .view-core-team {
   position: relative;
   text-align: center;
@@ -30,74 +32,133 @@
   -webkit-box-shadow: 0 15px 10px -12px @gray;
 
   .views-row {
-    width: 300px;
     display: inline-block;
-    vertical-align: top;
+    width: 220px;
     margin: 0 20px;
+    vertical-align: top;
+
+
+    .field-name-field-bild img {
+      width: 100%;
+    }
+
+    @media @tablet {
+      width: 300px;
+
+      .field-name-field-bild img {
+        width: 100%;
+      }
+    }
 
     .node-team-member {
       text-align: left;
 
       .field-name-title {
-        margin-bottom: 20px;
+        margin-bottom: -10px;
 
         h2 {
-        font-family: @pxl-title-font;
+        font-family: @font-size-large;
+
+          @media @tablet {
+            font-family: @pxl-title-font;
+          }
         }
+      }
+
+      .field-name-field-position {
+        margin-bottom: 20px;
       }
 
       .field-name-body {
         padding-bottom: 30px;
-      }
+        font-size: 12px;
 
-      .view-mode-full_advisory {
-        width: 220px;
+        @media @tablet {
+          font-size: @font-size-base;
+        }
+      }
+    }
+
+
+    .view-mode-full_advisory {
+      width: 250px;
+
+      .field-name-field-bild img {
+        width: 60%;
+
+        @media @tablet {
+          width: 100%;
+        }
       }
     }
   }
 }
 
+// Netzwerk section
+
 .view-netzwerk {
   position: relative;
-  text-align: center;
   padding-bottom: 50px;
   box-shadow: 0 20px 13px -15px @gray;
   -moz-box-shadow: 0 15px 10px -12px @gray;
   -webkit-box-shadow: 0 15px 10px -12px @gray;
+  font-size: @font-size-small;
+
+
+  @media @tablet {
+    font-size: @font-size-base;
+  }
 
   .views-row {
-    width: 250px;
-    height: 120px;
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 40px;
-    border-right: solid 2px;
-    border-color: @brand-primary;
+    margin: 0 -4px 40px 0;
+    width: 25%;
+    height: 70px;
+    border-left: solid 2px @brand-primary;
 
-    &.views-row-1,
-    &.views-row-8 {
-      margin-left: 100px;
+    @media @tablet {
+      height: 100px;
     }
 
-    &.views-row-3,
-    &.views-row-10 {
-      border-right: hidden;
-      margin-right: 100px;
+    @media @normal {
+      height: 120px;
     }
 
-    &.views-row-7 {
-      border-right: hidden;
+    &:nth-child(7n+1){
+      margin-left: 12.5%;
+      border-left: none;
+    }
+
+    &:nth-child(7n+4) {
+      border-left: none;
     }
 
     .node-netzwerk {
-      vertical-align: middle;
-    }
-  }
+      text-align: center;
+      margin-top: 5px;
 
-  .views-row-last {
-    border-left: solid 2px;
-    border-color: @brand-primary;
-    margin: 0 0 50px 0!important;
+      @media @tablet {
+        margin-top: 10px;
+      }
+
+      @media @normal {
+        margin-top: 20px;
+      }
+
+      .field-name-title h2 {
+        font-size: @font-size-base;
+        margin: 0 5px;
+
+        @media @tablet {
+          font-size: @font-size-large;
+        }
+      }
+
+      .field-name-body {
+        margin-top: 5px;
+      }
+    }
   }
 }
 
@@ -113,5 +174,6 @@
   img {
     width: 100%;
     max-width: 100%;
+    height: auto;
   }
 }

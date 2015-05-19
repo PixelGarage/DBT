@@ -2,29 +2,55 @@
  * Pixelgarage Footer
  * --------------------------------------------------*/
 
+// Variables
+@footer-height-normal: 800px;
+@footer-height-tablet: 600px;
+@footer-height-mobile: 400px;
+
 .footer {
   border-top: none;
   padding-bottom: 0;
 
   .footer-inner {
     overflow: hidden;
-    height: 650px;
+    height: @footer-height-mobile;
     background: transparent url(../images/footer-dbt.png) no-repeat bottom left;
     background-size: contain;
+
+    @media @tablet {
+      height: @footer-height-tablet;
+    }
+
+    @media @normal {
+      height: @footer-height-normal;
+    }
 
     .region-footer {
       position: relative;
       height: 100%;
-      line-height: 650px;
+      line-height: @footer-height-mobile;
+
+      @media @tablet {
+        line-height: @footer-height-tablet;
+      }
+
+      @media @normal {
+        line-height: @footer-height-normal;
+      }
 
       .block-block {
         display: inline-block;
         vertical-align: bottom;
         width: 25%;
-        height: 65px;
-        margin: 0 -2px 30px;
+        height: 40px;
+        margin: 0 -2px 10px;
         border-right: solid 2px;
         border-color: #fff;
+
+        @media @tablet {
+          height: 65px;
+          margin: 0 -2px 30px;
+        }
 
         p {
           font-size: 11px;

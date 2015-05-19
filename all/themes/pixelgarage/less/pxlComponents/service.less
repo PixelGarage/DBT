@@ -9,17 +9,22 @@
 // Services blocks
 
 .view-service {
-  position: relative;
+  //position: relative;
   text-align: center;
   padding-bottom: 50px;
   border-bottom: 2px solid rgba(162,163,163,0.1);
   margin-bottom: 30px;
 
   .views-row {
-    width: 300px;
+    width: 280px;
     display: inline-block;
     vertical-align: top;
     margin: 0 30px;
+
+    @media @tablet {
+      width: 300px;
+      margin: 0 20px;
+    }
 
     .node-services {
       text-align: center;
