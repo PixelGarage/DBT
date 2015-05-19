@@ -9277,6 +9277,9 @@ form#user-login {
   padding: 30px 0 30px;
   border-bottom: 2px solid rgba(162, 163, 163, 0.1);
 }
+.view-blog .views-row .node-article .field-name-field-image {
+  padding-top: 30px;
+}
 .pane-team-blog {
   padding-top: 70px;
   float: right;
