@@ -9262,6 +9262,51 @@ form#user-login {
   display: block;
   margin: 0 auto;
 }
+/*
+ *  Blog
+ * --------------------------------------------------*/
+.view-blog {
+  padding: 70px 0 50px;
+  margin-bottom: 30px;
+}
+.view-blog .views-row {
+  display: inline-block;
+}
+.view-blog .views-row .node-article {
+  width: 750px;
+  padding: 30px 0 30px;
+  border-bottom: 2px solid rgba(162, 163, 163, 0.1);
+}
+.pane-team-blog {
+  padding-top: 70px;
+  float: right;
+  width: 350px;
+}
+.pane-team-blog .pane-title {
+  padding-bottom: 10px;
+}
+.pane-team-blog .view-team-blog {
+  padding-left: 30px;
+}
+.pane-team-blog .view-team-blog .views-row {
+  display: inline-block;
+  margin-right: 30px;
+}
+.pane-team-blog .view-team-blog .views-row .field-name-field-bild {
+  width: 120px;
+}
+.pane-team-blog .view-team-blog .views-row .field-name-title h2 {
+  margin: 10px 0 40px;
+  font-family: 'TheSansLightPlain';
+  font-size: medium;
+}
+.node-article.view-mode-full {
+  display: inline-block;
+}
+.node-article.view-mode-full .field-name-field-tags {
+  width: 100px;
+  padding-top: 30px;
+}
 /* --------------------------------------------------
  * Pixelgarage Header
  * --------------------------------------------------*/
