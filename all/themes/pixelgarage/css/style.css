@@ -8876,64 +8876,89 @@ form#user-login {
 /*
  * Home / Landing styles
  * --------------------------------------------------*/
-#block-system-main .view-beduerfnis-grundsatz {
+body.page-home {
+  /* #block-system-main {
+  .view-beduerfnis-grundsatz {
+    padding-bottom: 50px;
+    box-shadow: 0 20px 13px -15px @gray;
+    -moz-box-shadow: 0 15px 10px -12px @gray;
+    -webkit-box-shadow: 0 15px 10px -12px @gray;
+
+    .views-row {
+      display: inline-block;
+      width: 100%;
+      vertical-align: top;
+
+      @media @tablet {
+        width: 100%;
+      }
+
+      @media @normal {
+        margin: 0 30px;
+      }
+
+      .field-name-title {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .field-name-body {
+        margin: 0 20px;
+        text-align: center;
+        font-family: @pxl-text-font;
+      }
+    }
+  }
+
+*/
+}
+body.page-home .bootstrap-twocol-stacked > .row-middle {
   padding-bottom: 50px;
   box-shadow: 0 20px 13px -15px #555555;
   -moz-box-shadow: 0 15px 10px -12px #555555;
   -webkit-box-shadow: 0 15px 10px -12px #555555;
 }
-#block-system-main .view-beduerfnis-grundsatz .views-row {
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-}
-@media screen and (min-width: 768px) {
-  #block-system-main .view-beduerfnis-grundsatz .views-row {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 992px) {
-  #block-system-main .view-beduerfnis-grundsatz .views-row {
-    width: 500px;
-    margin: 0 30px;
-  }
-}
-#block-system-main .view-beduerfnis-grundsatz .views-row .field-name-title {
+body.page-home .bootstrap-twocol-stacked .pane-node .pane-title {
+  padding-bottom: 10px;
   text-align: center;
-  margin-bottom: 20px;
 }
-#block-system-main .view-beduerfnis-grundsatz .views-row .field-name-body {
+body.page-home .bootstrap-twocol-stacked .pane-node .field-name-body {
   margin: 0 20px;
   text-align: center;
   font-family: 'TheSansLightPlain';
 }
-#block-system-main .pane-title {
+@media screen and (min-width: 992px) {
+  body.page-home .bootstrap-twocol-stacked .pane-node .field-name-body {
+    margin: 0 30px;
+  }
+}
+body.page-home .pane-referenzen {
   padding-top: 30px;
   text-align: center;
   font-family: 'TheSansLightCaps';
 }
-#block-system-main .pane-title .field-name-body {
-  margin: 50px;
-  text-align: center;
-  font-family: 'TheSansLightPlain';
-}
-#block-system-main .view-referenzen .view-mode-teaser {
+body.page-home .pane-referenzen .view-referenzen .view-mode-teaser {
   position: relative;
   margin: 0 30px;
 }
-#block-system-main .view-referenzen .view-mode-teaser .field-name-title {
+body.page-home .pane-referenzen .view-referenzen .view-mode-teaser .field-name-title {
   padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
-  #block-system-main .view-referenzen .view-mode-teaser .field-name-title {
+  body.page-home .pane-referenzen .view-referenzen .view-mode-teaser .field-name-title {
     padding-top: 0;
   }
 }
-#block-system-main .views-field-field-logos {
+body.page-home .pane-kunden {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'TheSansLightCaps';
+}
+body.page-home .pane-kunden .views-field-field-logos {
   margin: 0 5px;
 }
 @media screen and (min-width: 768px) {
-  #block-system-main .views-field-field-logos {
+  body.page-home .pane-kunden .views-field-field-logos {
     margin: 0;
   }
 }
@@ -8943,7 +8968,12 @@ form#user-login {
 .view-banners {
   position: relative;
   width: 100%;
-  margin: -5px 0 50px;
+  margin: -22px 0 50px;
+}
+@media screen and (min-width: 768px) {
+  .view-banners {
+    margin-top: -12px;
+  }
 }
 .view-banners .carousel .carousel-inner {
   width: auto;
@@ -9265,59 +9295,85 @@ form#user-login {
 /*
  *  Blog
  * --------------------------------------------------*/
-.view-blog {
-  padding: 70px 0 50px;
+body.page-blog .view-blog {
+  padding: 0 0 50px;
   margin-bottom: 30px;
 }
-.view-blog .views-row {
+body.page-blog .view-blog .views-row {
   display: inline-block;
 }
-.view-blog .views-row .node-article {
-  width: 750px;
+body.page-blog .view-blog .views-row .node-article {
   padding: 30px 0 30px;
   border-bottom: 2px solid rgba(162, 163, 163, 0.1);
 }
-.view-blog .views-row .node-article .field-name-field-image {
+body.page-blog .view-blog .views-row .node-article .field-name-title h2 {
+  font-family: 'TheSansLightCaps';
+}
+body.page-blog .view-blog .views-row .node-article .field-name-field-image {
   padding-top: 30px;
 }
-.pane-team-blog {
-  padding-top: 70px;
-  float: right;
-  width: 350px;
+body.page-blog .region-sidebar-second {
+  padding-top: 50px;
 }
-.pane-team-blog .pane-title {
+body.page-blog .region-sidebar-second .block-title {
   padding-bottom: 10px;
+  text-align: center;
+  font-family: 'TheSansLightCaps';
+  font-size: medium;
 }
-.pane-team-blog .view-team-blog {
-  padding-left: 30px;
+@media screen and (min-width: 992px) {
+  body.page-blog .region-sidebar-second .block-title {
+    font-family: 'TheSansLightCaps';
+    font-size: x-large;
+  }
 }
-.pane-team-blog .view-team-blog .views-row {
+body.page-blog .region-sidebar-second .view-core-team {
+  padding-left: 20px;
+}
+body.page-blog .region-sidebar-second .view-core-team .views-row {
   display: inline-block;
-  margin-right: 30px;
+  width: 50%;
+  margin: 0 -2px;
 }
-.pane-team-blog .view-team-blog .views-row .field-name-field-bild {
-  width: 120px;
+@media screen and (min-width: 768px) {
+  body.page-blog .region-sidebar-second .view-core-team .views-row {
+    width: 100px;
+  }
 }
-.pane-team-blog .view-team-blog .views-row .field-name-title h2 {
+body.page-blog .region-sidebar-second .view-core-team .views-row .node-team-member.node-teaser {
+  padding-right: 20px;
+}
+body.page-blog .region-sidebar-second .view-core-team .views-row .node-team-member.node-teaser .field-name-field-bild {
+  max-width: 100%;
+  height: auto;
+}
+body.page-blog .region-sidebar-second .view-core-team .views-row .node-team-member.node-teaser .field-name-title h2 {
   margin: 10px 0 40px;
   font-family: 'TheSansLightPlain';
-  font-size: medium;
+  font-size: small;
 }
 .node-article.view-mode-full {
   display: inline-block;
 }
-.node-article.view-mode-full .field-name-field-tags {
-  width: 100px;
-  padding-top: 30px;
+.node-article.view-mode-full .field-name-title h2 {
+  font-family: 'TheSansLightCaps';
+}
+.node-article.view-mode-full .field-name-field-tags .field-item {
+  display: inline-block;
+}
+.node-article.view-mode-full .field-name-field-tags .field-item .taxonomy-term h2 {
+  padding: 0 20px 10px 0;
+  font-family: 'TheSansLightCaps';
+  font-size: medium;
 }
 /* --------------------------------------------------
  * Pixelgarage Header
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 110px !important;
+  padding-top: 145px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 110px !important;
+  padding-top: 145px !important;
 }
 .navbar-toggle {
   background-color: #fff;

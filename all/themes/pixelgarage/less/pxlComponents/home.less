@@ -8,7 +8,38 @@
 
 // Referenz projekte (Teaser mode)
 
-#block-system-main {
+body.page-home {
+
+  .bootstrap-twocol-stacked {
+
+    > .row-middle {
+      padding-bottom: 50px;
+      box-shadow: 0 20px 13px -15px @gray;
+      -moz-box-shadow: 0 15px 10px -12px @gray;
+      -webkit-box-shadow: 0 15px 10px -12px @gray;
+    }
+
+    .pane-node {
+
+      .pane-title {
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .field-name-body {
+        margin: 0 20px;
+        text-align: center;
+        font-family: @pxl-text-font;
+
+        @media @normal {
+          margin: 0 30px;
+        }
+      }
+    }
+  }
+
+
+/* #block-system-main {
   .view-beduerfnis-grundsatz {
     padding-bottom: 50px;
     box-shadow: 0 20px 13px -15px @gray;
@@ -25,7 +56,6 @@
       }
 
       @media @normal {
-        width: 500px;
         margin: 0 30px;
       }
 
@@ -42,40 +72,41 @@
     }
   }
 
-  .pane-title {
+*/
+
+  .pane-referenzen {
     padding-top: 30px;
     text-align: center;
     font-family: @pxl-title-font;
 
-    .field-name-body {
-      margin: 50px;
-      text-align: center;
-      font-family: @pxl-text-font;
-    }
-  }
+    .view-referenzen {
 
+      .view-mode-teaser {
+        position: relative;
+        margin: 0 30px;
 
-  .view-referenzen {
+        .field-name-title {
+          padding-top: 20px;
 
-    .view-mode-teaser {
-      position: relative;
-      margin: 0 30px;
-
-      .field-name-title {
-        padding-top: 20px;
-
-        @media @tablet {
-          padding-top: 0;
+          @media @tablet {
+            padding-top: 0;
+          }
         }
       }
     }
   }
 
-  .views-field-field-logos {
-    margin: 0 5px;
+  .pane-kunden {
+    padding-top: 30px;
+    text-align: center;
+    font-family: @pxl-title-font;
 
-    @media @tablet {
-      margin: 0;
+    .views-field-field-logos {
+      margin: 0 5px;
+
+      @media @tablet {
+        margin: 0;
+      }
     }
   }
 }
