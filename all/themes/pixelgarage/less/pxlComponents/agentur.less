@@ -113,25 +113,32 @@
     display: inline-block;
     vertical-align: top;
     margin: 0 -4px 40px 0;
-    width: 25%;
-    height: 70px;
-    border-left: solid 2px @brand-primary;
+    width: 100%;
+    height: 50px;
 
     @media @tablet {
+      vertical-align: top;
+      margin: 0 -4px 40px 0;
+      width: 25%;
       height: 100px;
+      border-left: solid 2px @brand-primary;
     }
 
     @media @normal {
       height: 120px;
     }
 
-    &:nth-child(7n+1){
-      margin-left: 12.5%;
-      border-left: none;
+    @media @tablet {
+      &:nth-child(7n+1){
+        margin-left: 12.5%;
+        border-left: none;
+      }
     }
 
-    &:nth-child(7n+4) {
-      border-left: none;
+    @media @tablet {
+      &:nth-child(7n+4) {
+        border-left: none;
+      }
     }
 
     .node-netzwerk {
@@ -147,7 +154,7 @@
       }
 
       .field-name-title h2 {
-        font-size: @font-size-base;
+        font-size: @font-size-large;
         margin: 0 5px;
 
         @media @tablet {
