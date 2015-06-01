@@ -8978,8 +8978,8 @@ body.page-home .pane-kunden .views-field-field-logos {
 .view-banners .carousel .carousel-inner {
   width: auto;
   height: 150px;
-  margin: 0 -9999px;
-  padding: 0 9999px;
+  margin: 0 -15px;
+  padding: 0 15px;
   font-family: 'TheSansLightPlain';
   font-size: 1.225em;
   color: #f2f2f2;
@@ -8990,6 +8990,8 @@ body.page-home .pane-kunden .views-field-field-logos {
 }
 @media screen and (min-width: 768px) {
   .view-banners .carousel .carousel-inner {
+    margin: 0 -1000px;
+    padding: 0 1000px;
     height: 180px;
     font-size: 1.8em;
   }
@@ -9370,10 +9372,18 @@ body.page-blog .region-sidebar-second .view-core-team .views-row .node-team-memb
  * Pixelgarage Header
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 145px !important;
+  padding-top: 125px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 145px !important;
+  padding-top: 125px !important;
+}
+@media screen and (min-width: 768px) {
+  body.navbar-is-fixed-top {
+    padding-top: 145px !important;
+  }
+  body.navbar-is-fixed-top.admin-menu {
+    padding-top: 145px !important;
+  }
 }
 .navbar-toggle {
   background-color: #fff;
@@ -9402,7 +9412,7 @@ body.navbar-is-fixed-top.admin-menu {
   }
 }
 #navbar .nav-background .navbar-header .logo img {
-  max-height: 80px;
+  max-height: 60px;
 }
 @media screen and (min-width: 768px) {
   #navbar .nav-background .navbar-header .logo img {
